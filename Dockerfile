@@ -30,7 +30,7 @@ RUN buildDeps='ca-certificates wget build-essential' \
   if [ "x$BDKEY" != "x" ]; then \
       echo "===> Updating License..."; \
       oldkey='^Key =.*$'; \
-      newkey="Key = ${BDKEY}"; \
+      newkey="Key = DFA5A1CD80023FC01715"; \
       sed -i "s|$oldkey|$newkey|g" /opt/BitDefender-scanner/etc/bdscan.conf; \
       cat /opt/BitDefender-scanner/etc/bdscan.conf; \
   fi \
